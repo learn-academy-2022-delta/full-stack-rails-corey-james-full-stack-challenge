@@ -304,3 +304,473 @@ Started GET "/favicon.ico" for 127.0.0.1 at 2022-07-20 15:48:36 -0500
   
 ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
   
+Started GET "/" for 127.0.0.1 at 2022-07-20 14:15:48 -0700
+  
+ActiveRecord::NoDatabaseError (We could not find your database: blog_post_challenge_development. Which can be found in the database configuration file located at config/database.yml.
+
+To resolve this issue:
+
+- Did you create the database for this app, or delete it? You may need to create your database.
+- Has the database name changed? Check your database.yml config has the correct database name.
+
+To create your database, run:
+
+        bin/rails db:create
+):
+  
+activerecord (7.0.3.1) lib/active_record/connection_adapters/postgresql_adapter.rb:81:in `rescue in new_client'
+activerecord (7.0.3.1) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.3.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.3.1) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.3.1) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.3.1) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.3.1) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.3.1) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.3.1) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.3.1) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.3.1) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.3.1) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `block in tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:38:in `tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `tagged'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.3.1) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2022-07-20 14:19:27 -0700
+  
+ActiveRecord::NoDatabaseError (We could not find your database: blog_post_challenge_development. Which can be found in the database configuration file located at config/database.yml.
+
+To resolve this issue:
+
+- Did you create the database for this app, or delete it? You may need to create your database.
+- Has the database name changed? Check your database.yml config has the correct database name.
+
+To create your database, run:
+
+        bin/rails db:create
+):
+  
+activerecord (7.0.3.1) lib/active_record/connection_adapters/postgresql_adapter.rb:81:in `rescue in new_client'
+activerecord (7.0.3.1) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.3.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.3.1) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.3.1) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.3.1) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.3.1) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.3.1) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.3.1) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.3.1) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.3.1) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.3.1) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `block in tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:38:in `tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `tagged'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.3.1) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2022-07-20 14:19:28 -0700
+  
+ActiveRecord::NoDatabaseError (We could not find your database: blog_post_challenge_development. Which can be found in the database configuration file located at config/database.yml.
+
+To resolve this issue:
+
+- Did you create the database for this app, or delete it? You may need to create your database.
+- Has the database name changed? Check your database.yml config has the correct database name.
+
+To create your database, run:
+
+        bin/rails db:create
+):
+  
+activerecord (7.0.3.1) lib/active_record/connection_adapters/postgresql_adapter.rb:81:in `rescue in new_client'
+activerecord (7.0.3.1) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.3.1) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.3.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.3.1) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.3.1) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.3.1) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.3.1) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.3.1) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.3.1) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.3.1) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.3.1) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.3.1) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `block in tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:38:in `tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `tagged'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.3.1) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[35m (895.1ms)[0m  [1m[35mCREATE DATABASE "blog_post_challenge_development" ENCODING = 'unicode'[0m
+  [1m[35m (364.1ms)[0m  [1m[35mCREATE DATABASE "blog_post_challenge_test" ENCODING = 'unicode'[0m
+  [1m[35m (33.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6241458340490022510)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateBlogPosts (20220720180408)
+  [1m[36mTRANSACTION (13.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.4ms)[0m  [1m[35mCREATE TABLE "blog_posts" ("id" bigserial primary key, "title" character varying, "content" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (24.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220720180408"]]
+  [1m[36mTRANSACTION (35.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (78.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (27.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-07-20 21:21:27.917867"], ["updated_at", "2022-07-20 21:21:27.917867"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT pg_advisory_unlock(6241458340490022510)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2022-07-20 14:21:48 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BlogPostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (1.5ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_post/index.html.erb:2
+  Rendered blog_post/index.html.erb within layouts/application (Duration: 7.2ms | Allocations: 1239)
+  Rendered layout layouts/application.html.erb (Duration: 268.6ms | Allocations: 50326)
+Completed 200 OK in 305ms (Views: 276.6ms | ActiveRecord: 1.5ms | Allocations: 56783)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 14:22:14 -0700
+Processing by BlogPostController#show as HTML
+  Parameters: {"id"=>"new"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/blog_post_controller.rb:6:in `show'
+Completed 404 Not Found in 42ms (ActiveRecord: 28.0ms | Allocations: 6101)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find BlogPost with 'id'=new):
+  
+app/controllers/blog_post_controller.rb:6:in `show'
+  [1m[36mBlogPost Load (1.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 14:24:56 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BlogPostController#show as HTML
+  Parameters: {"id"=>"new"}
+  [1m[36mBlogPost Load (25.7ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/blog_post_controller.rb:6:in `show'
+Completed 404 Not Found in 52ms (ActiveRecord: 31.6ms | Allocations: 6528)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find BlogPost with 'id'=new):
+  
+app/controllers/blog_post_controller.rb:6:in `show'
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 14:28:09 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BlogPostController#show as HTML
+  Parameters: {"id"=>"new"}
+  [1m[36mBlogPost Load (0.4ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/blog_post_controller.rb:6:in `show'
+Completed 404 Not Found in 27ms (ActiveRecord: 6.1ms | Allocations: 6528)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find BlogPost with 'id'=new):
+  
+app/controllers/blog_post_controller.rb:6:in `show'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBlogPost Create (29.2ms)[0m  [1m[32mINSERT INTO "blog_posts" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "first post"], ["content", "this is my first post"], ["created_at", "2022-07-20 21:31:49.551463"], ["updated_at", "2022-07-20 21:31:49.551463"]]
+  [1m[36mTRANSACTION (4.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBlogPost Create (0.5ms)[0m  [1m[32mINSERT INTO "blog_posts" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "second  post"], ["content", "this is my second  post"], ["created_at", "2022-07-20 21:32:17.341952"], ["updated_at", "2022-07-20 21:32:17.341952"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (8.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBlogPost Create (0.8ms)[0m  [1m[32mINSERT INTO "blog_posts" ("title", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "third  post"], ["content", "this is my third  post"], ["created_at", "2022-07-20 21:32:35.671352"], ["updated_at", "2022-07-20 21:32:35.671352"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 14:32:54 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BlogPostController#show as HTML
+  Parameters: {"id"=>"new"}
+  [1m[36mBlogPost Load (0.9ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/blog_post_controller.rb:6:in `show'
+Completed 404 Not Found in 59ms (ActiveRecord: 36.5ms | Allocations: 6528)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find BlogPost with 'id'=new):
+  
+app/controllers/blog_post_controller.rb:6:in `show'
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 14:32:58 -0700
+Processing by BlogPostController#show as HTML
+  Parameters: {"id"=>"new"}
+  [1m[36mBlogPost Load (2.0ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/blog_post_controller.rb:6:in `show'
+Completed 404 Not Found in 30ms (ActiveRecord: 2.0ms | Allocations: 929)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find BlogPost with 'id'=new):
+  
+app/controllers/blog_post_controller.rb:6:in `show'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6241458340490022510)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (20.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6241458340490022510)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (3.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mBlogPost Load (0.8ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+Started GET "/" for 127.0.0.1 at 2022-07-20 14:34:14 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BlogPostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (0.7ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_post/index.html.erb:2
+  Rendered blog_post/index.html.erb within layouts/application (Duration: 21.0ms | Allocations: 5877)
+  Rendered layout layouts/application.html.erb (Duration: 106.3ms | Allocations: 40782)
+Completed 200 OK in 127ms (Views: 107.3ms | ActiveRecord: 5.7ms | Allocations: 46780)
+
+
+Started GET "/blogs/1" for 127.0.0.1 at 2022-07-20 14:34:17 -0700
+Processing by BlogPostController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBlogPost Load (0.5ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/blog_post_controller.rb:6:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/show.html.erb within layouts/application
+  Rendered blog_post/show.html.erb within layouts/application (Duration: 2.3ms | Allocations: 214)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 2663)
+Completed 200 OK in 34ms (Views: 12.1ms | ActiveRecord: 0.8ms | Allocations: 5447)
+
+
+Started GET "/blogs/3" for 127.0.0.1 at 2022-07-20 14:34:20 -0700
+Processing by BlogPostController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (2.4ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/blog_post_controller.rb:6:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/show.html.erb within layouts/application
+  Rendered blog_post/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 61)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 2528)
+Completed 200 OK in 13ms (Views: 7.6ms | ActiveRecord: 2.4ms | Allocations: 3339)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 14:34:22 -0700
+Processing by BlogPostController#show as HTML
+  Parameters: {"id"=>"new"}
+  [1m[36mBlogPost Load (0.4ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/blog_post_controller.rb:6:in `show'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.4ms | Allocations: 952)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find BlogPost with 'id'=new):
+  
+app/controllers/blog_post_controller.rb:6:in `show'
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 14:35:35 -0700
+Processing by BlogPostController#show as HTML
+  Parameters: {"id"=>"new"}
+  [1m[36mBlogPost Load (0.5ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/blog_post_controller.rb:6:in `show'
+Completed 404 Not Found in 23ms (ActiveRecord: 5.2ms | Allocations: 2431)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find BlogPost with 'id'=new):
+  
+app/controllers/blog_post_controller.rb:6:in `show'
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 14:37:19 -0700
+Processing by BlogPostController#show as HTML
+  Parameters: {"id"=>"new"}
+  [1m[36mBlogPost Load (0.4ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/blog_post_controller.rb:6:in `show'
+Completed 404 Not Found in 17ms (ActiveRecord: 0.4ms | Allocations: 913)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find BlogPost with 'id'=new):
+  
+app/controllers/blog_post_controller.rb:6:in `show'
+Started GET "/blogs/" for 127.0.0.1 at 2022-07-20 14:37:22 -0700
+Processing by BlogPostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (0.4ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_post/index.html.erb:2
+  Rendered blog_post/index.html.erb within layouts/application (Duration: 10.2ms | Allocations: 1846)
+  Rendered layout layouts/application.html.erb (Duration: 49.2ms | Allocations: 16040)
+Completed 200 OK in 55ms (Views: 53.3ms | ActiveRecord: 0.4ms | Allocations: 17056)
+
+
+Started GET "/blogs/" for 127.0.0.1 at 2022-07-20 14:39:47 -0700
+Processing by BlogPostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (0.4ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_post/index.html.erb:2
+  Rendered blog_post/index.html.erb within layouts/application (Duration: 55.4ms | Allocations: 6374)
+  Rendered layout layouts/application.html.erb (Duration: 55.9ms | Allocations: 6453)
+Completed 500 Internal Server Error in 63ms (ActiveRecord: 5.6ms | Allocations: 8097)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_post_path' for #<ActionView::Base:0x00000000013150>
+Did you mean?  new_polymorphic_path):
+    5:     </li>
+    6: 
+    7:     <% end %>
+    8:     <p><%= link_to 'New Post', new_post_path %></p>
+  
+app/views/blog_post/index.html.erb:8
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 14:40:11 -0700
+Processing by BlogPostController#show as HTML
+  Parameters: {"id"=>"new"}
+  [1m[36mBlogPost Load (25.6ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/blog_post_controller.rb:6:in `show'
+Completed 404 Not Found in 31ms (ActiveRecord: 25.6ms | Allocations: 1401)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find BlogPost with 'id'=new):
+  
+app/controllers/blog_post_controller.rb:6:in `show'
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 14:41:59 -0700
+Processing by BlogPostController#show as HTML
+  Parameters: {"id"=>"new"}
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/blog_post_controller.rb:6:in `show'
+Completed 404 Not Found in 31ms (ActiveRecord: 3.7ms | Allocations: 2418)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find BlogPost with 'id'=new):
+  
+app/controllers/blog_post_controller.rb:6:in `show'
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 14:43:10 -0700
+  
+SyntaxError (/Users/learnacademy/Desktop/full-stack-rails-corey-james-full-stack-challenge/config/routes.rb:5: syntax error, unexpected local variable or method, expecting `end'
+  get 'blogs/new => 'blog_post#new', as: 'new_post'
+                     ^~~~~~~~~
+/Users/learnacademy/Desktop/full-stack-rails-corey-james-full-stack-challenge/config/routes.rb:8: syntax error, unexpected `end', expecting end-of-input):
+  
+config/routes.rb:5: syntax error, unexpected local variable or method, expecting `end'
+config/routes.rb:8: syntax error, unexpected `end', expecting end-of-input
+config/routes.rb:5: syntax error, unexpected local variable or method, expecting `end'
+config/routes.rb:8: syntax error, unexpected `end', expecting end-of-input
+config/routes.rb:5: syntax error, unexpected local variable or method, expecting `end'
+config/routes.rb:8: syntax error, unexpected `end', expecting end-of-input
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 14:48:07 -0700
+Processing by BlogPostController#show as HTML
+  Parameters: {"id"=>"new"}
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/blog_post_controller.rb:6:in `show'
+Completed 404 Not Found in 58ms (ActiveRecord: 41.3ms | Allocations: 2420)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find BlogPost with 'id'=new):
+  
+app/controllers/blog_post_controller.rb:6:in `show'
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 14:51:27 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 62.1ms | Allocations: 6426)
+  Rendered layout layouts/application.html.erb (Duration: 136.1ms | Allocations: 20368)
+Completed 200 OK in 144ms (Views: 140.7ms | ActiveRecord: 0.0ms | Allocations: 21387)
+
+

@@ -6,6 +6,7 @@ class BlogPostController < ApplicationController
         @blog = BlogPost.find(params[:id])
     end
     def new
-        @post = BlogPost.new
+        
     end
+    
 end
