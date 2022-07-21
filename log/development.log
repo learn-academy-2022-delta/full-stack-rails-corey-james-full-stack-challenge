@@ -774,3 +774,2640 @@ Processing by BlogPostController#new as HTML
 Completed 200 OK in 144ms (Views: 140.7ms | ActiveRecord: 0.0ms | Allocations: 21387)
 
 
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 14:59:02 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 26.1ms | Allocations: 4893)
+  Rendered layout layouts/application.html.erb (Duration: 219.5ms | Allocations: 39550)
+Completed 200 OK in 257ms (Views: 230.4ms | ActiveRecord: 0.0ms | Allocations: 44907)
+
+
+Started POST "/blogs" for 127.0.0.1 at 2022-07-20 14:59:12 -0700
+Processing by BlogPostController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "title"=>"new", "content"=>"post", "commit"=>"add post"}
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms | Allocations: 3819)
+
+
+  
+NameError (undefined local variable or method `post_params' for #<BlogPostController:0x0000000000ad70>
+Did you mean?  to_param):
+  
+app/controllers/blog_post_controller.rb:12:in `create'
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 15:04:27 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 2452)
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 16182)
+Completed 200 OK in 26ms (Views: 24.7ms | ActiveRecord: 0.0ms | Allocations: 16959)
+
+
+Started POST "/blogs" for 127.0.0.1 at 2022-07-20 15:04:34 -0700
+Processing by BlogPostController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "title"=>"new", "content"=>"post", "commit"=>"add post"}
+Completed 400 Bad Request in 4ms (ActiveRecord: 0.0ms | Allocations: 1235)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: blog):
+  
+app/controllers/blog_post_controller.rb:22:in `blog_params'
+app/controllers/blog_post_controller.rb:12:in `create'
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 15:04:34 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 2430)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 4664)
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 4983)
+
+
+Started GET "/" for 127.0.0.1 at 2022-07-20 15:04:50 -0700
+Processing by BlogPostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (0.8ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_post/index.html.erb:2
+  Rendered blog_post/index.html.erb within layouts/application (Duration: 47.8ms | Allocations: 5578)
+  Rendered layout layouts/application.html.erb (Duration: 52.3ms | Allocations: 8042)
+Completed 200 OK in 59ms (Views: 22.4ms | ActiveRecord: 31.9ms | Allocations: 8637)
+
+
+Started GET "/" for 127.0.0.1 at 2022-07-20 15:04:55 -0700
+Processing by BlogPostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (0.5ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_post/index.html.erb:2
+  Rendered blog_post/index.html.erb within layouts/application (Duration: 31.6ms | Allocations: 716)
+  Rendered layout layouts/application.html.erb (Duration: 38.4ms | Allocations: 3190)
+Completed 200 OK in 41ms (Views: 39.1ms | ActiveRecord: 0.5ms | Allocations: 3528)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 15:04:56 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 2448)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 4667)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 4992)
+
+
+Started POST "/blogs" for 127.0.0.1 at 2022-07-20 15:05:02 -0700
+Processing by BlogPostController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "title"=>"new", "content"=>"post", "commit"=>"add post"}
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.0ms | Allocations: 778)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: blog):
+  
+app/controllers/blog_post_controller.rb:22:in `blog_params'
+app/controllers/blog_post_controller.rb:12:in `create'
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 15:05:02 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 2434)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 4668)
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 4987)
+
+
+Started POST "/blogs" for 127.0.0.1 at 2022-07-20 15:05:17 -0700
+Processing by BlogPostController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "title"=>"new", "content"=>"post", "commit"=>"add post"}
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 3823)
+
+
+  
+NameError (undefined local variable or method `blog_params' for #<BlogPostController:0x00000000012fe8>
+Did you mean?  blog_path):
+  
+app/controllers/blog_post_controller.rb:12:in `create'
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 15:05:43 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 2469)
+  Rendered layout layouts/application.html.erb (Duration: 18.9ms | Allocations: 16198)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.0ms | Allocations: 16970)
+
+
+Started POST "/blogs" for 127.0.0.1 at 2022-07-20 15:05:48 -0700
+Processing by BlogPostController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "title"=>"new", "content"=>"post", "commit"=>"add post"}
+Completed 400 Bad Request in 4ms (ActiveRecord: 0.0ms | Allocations: 1235)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: blogs):
+  
+app/controllers/blog_post_controller.rb:22:in `blog_params'
+app/controllers/blog_post_controller.rb:12:in `create'
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 15:05:48 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 2446)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 4680)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms | Allocations: 4999)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2022-07-20 15:05:54 -0700
+Processing by BlogPostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (0.5ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_post/index.html.erb:2
+  Rendered blog_post/index.html.erb within layouts/application (Duration: 33.6ms | Allocations: 2133)
+  Rendered layout layouts/application.html.erb (Duration: 42.5ms | Allocations: 4593)
+Completed 200 OK in 47ms (Views: 35.5ms | ActiveRecord: 8.5ms | Allocations: 5100)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 15:07:02 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 2458)
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 16188)
+Completed 200 OK in 20ms (Views: 18.1ms | ActiveRecord: 0.0ms | Allocations: 16961)
+
+
+Started POST "/blogs" for 127.0.0.1 at 2022-07-20 15:07:07 -0700
+Processing by BlogPostController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "title"=>"new", "content"=>"post", "commit"=>"add post"}
+Completed 400 Bad Request in 7ms (ActiveRecord: 0.0ms | Allocations: 1227)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: blog):
+  
+app/controllers/blog_post_controller.rb:22:in `blog_params'
+app/controllers/blog_post_controller.rb:12:in `create'
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 15:07:07 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 2438)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 4672)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 4992)
+
+
+Started POST "/blogs" for 127.0.0.1 at 2022-07-20 15:07:45 -0700
+Processing by BlogPostController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "title"=>"new", "content"=>"post", "commit"=>"add post"}
+Completed 400 Bad Request in 4ms (ActiveRecord: 0.0ms | Allocations: 1213)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: blog):
+  
+app/controllers/blog_post_controller.rb:22:in `blog_params'
+app/controllers/blog_post_controller.rb:12:in `create'
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 15:07:45 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2470)
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | Allocations: 16200)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.0ms | Allocations: 16948)
+
+
+Started POST "/blogs" for 127.0.0.1 at 2022-07-20 15:09:23 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/blogs"):
+  
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 15:09:23 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 2484)
+  Rendered layout layouts/application.html.erb (Duration: 21.4ms | Allocations: 16214)
+Completed 200 OK in 24ms (Views: 23.0ms | ActiveRecord: 0.0ms | Allocations: 16986)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2022-07-20 15:09:27 -0700
+Processing by BlogPostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (25.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_post/index.html.erb:2
+  Rendered blog_post/index.html.erb within layouts/application (Duration: 39.3ms | Allocations: 2114)
+  Rendered layout layouts/application.html.erb (Duration: 45.1ms | Allocations: 4579)
+Completed 200 OK in 52ms (Views: 18.2ms | ActiveRecord: 29.7ms | Allocations: 5505)
+
+
+Started GET "/blog/1" for 127.0.0.1 at 2022-07-20 15:09:28 -0700
+Processing by BlogPostController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBlogPost Load (0.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/blog_post_controller.rb:6:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/show.html.erb within layouts/application
+  Rendered blog_post/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 215)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 2675)
+Completed 200 OK in 35ms (Views: 7.6ms | ActiveRecord: 0.5ms | Allocations: 5435)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2022-07-20 15:09:31 -0700
+Processing by BlogPostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (0.4ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_post/index.html.erb:2
+  Rendered blog_post/index.html.erb within layouts/application (Duration: 26.7ms | Allocations: 716)
+  Rendered layout layouts/application.html.erb (Duration: 37.3ms | Allocations: 3178)
+Completed 200 OK in 41ms (Views: 38.8ms | ActiveRecord: 0.4ms | Allocations: 3508)
+
+
+  [1m[36mBlogPost Load (0.9ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+Started GET "/blogs" for 127.0.0.1 at 2022-07-20 15:10:29 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BlogPostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (19.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_post/index.html.erb:2
+  Rendered blog_post/index.html.erb within layouts/application (Duration: 38.4ms | Allocations: 5877)
+  Rendered layout layouts/application.html.erb (Duration: 127.8ms | Allocations: 40555)
+Completed 200 OK in 151ms (Views: 108.8ms | ActiveRecord: 25.4ms | Allocations: 46549)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 15:10:31 -0700
+Processing by BlogPostController#show as HTML
+  Parameters: {"id"=>"new"}
+  [1m[36mBlogPost Load (1.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/blog_post_controller.rb:6:in `show'
+Completed 404 Not Found in 6ms (ActiveRecord: 1.5ms | Allocations: 2780)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find BlogPost with 'id'=new):
+  
+app/controllers/blog_post_controller.rb:6:in `show'
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 15:12:51 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 6.1ms | Allocations: 4448)
+  Rendered layout layouts/application.html.erb (Duration: 23.0ms | Allocations: 18179)
+Completed 200 OK in 26ms (Views: 25.1ms | ActiveRecord: 0.0ms | Allocations: 19015)
+
+
+Started POST "/blogs" for 127.0.0.1 at 2022-07-20 15:12:55 -0700
+Processing by BlogPostController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "title"=>"new", "content"=>"new", "commit"=>"add post"}
+Completed 400 Bad Request in 4ms (ActiveRecord: 0.0ms | Allocations: 1281)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: post):
+  
+app/controllers/blog_post_controller.rb:22:in `blog_params'
+app/controllers/blog_post_controller.rb:12:in `create'
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 15:12:55 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 2439)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 4673)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 4992)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2022-07-20 15:13:00 -0700
+Processing by BlogPostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (0.8ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_post/index.html.erb:2
+  Rendered blog_post/index.html.erb within layouts/application (Duration: 17.8ms | Allocations: 2126)
+  Rendered layout layouts/application.html.erb (Duration: 24.0ms | Allocations: 4584)
+Completed 200 OK in 28ms (Views: 16.9ms | ActiveRecord: 8.8ms | Allocations: 5091)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 15:13:03 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 2450)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 4669)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 4994)
+
+
+Started POST "/blogs" for 127.0.0.1 at 2022-07-20 15:16:06 -0700
+Processing by BlogPostController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "title"=>"new", "content"=>"post", "commit"=>"add post"}
+Completed 400 Bad Request in 6ms (ActiveRecord: 0.0ms | Allocations: 1225)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: post):
+  
+app/controllers/blog_post_controller.rb:22:in `blog_params'
+app/controllers/blog_post_controller.rb:12:in `create'
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 15:16:06 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 2482)
+  Rendered layout layouts/application.html.erb (Duration: 46.4ms | Allocations: 16212)
+Completed 200 OK in 53ms (Views: 52.2ms | ActiveRecord: 0.0ms | Allocations: 16960)
+
+
+Started POST "/blogs" for 127.0.0.1 at 2022-07-20 15:17:59 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BlogPostController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "title"=>"new", "content"=>"post", "commit"=>"add post"}
+Completed 400 Bad Request in 17ms (ActiveRecord: 0.0ms | Allocations: 3914)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: post):
+  
+app/controllers/blog_post_controller.rb:22:in `blog_params'
+app/controllers/blog_post_controller.rb:12:in `create'
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 15:18:00 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 16.8ms | Allocations: 4492)
+  Rendered layout layouts/application.html.erb (Duration: 138.3ms | Allocations: 39002)
+Completed 200 OK in 147ms (Views: 145.5ms | ActiveRecord: 0.0ms | Allocations: 40157)
+
+
+Started POST "/blogs" for 127.0.0.1 at 2022-07-20 15:18:52 -0700
+Processing by BlogPostController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "title"=>"new", "content"=>"post", "commit"=>"add post"}
+Completed 400 Bad Request in 5ms (ActiveRecord: 0.0ms | Allocations: 1207)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: post):
+  
+app/controllers/blog_post_controller.rb:22:in `blog_params'
+app/controllers/blog_post_controller.rb:12:in `create'
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 15:18:52 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2466)
+  Rendered layout layouts/application.html.erb (Duration: 25.1ms | Allocations: 16196)
+Completed 200 OK in 29ms (Views: 27.5ms | ActiveRecord: 0.0ms | Allocations: 16946)
+
+
+Started POST "/blogs" for 127.0.0.1 at 2022-07-20 15:22:45 -0700
+Processing by BlogPostController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "title"=>"new", "content"=>"post", "commit"=>"add post"}
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 7.3ms | Allocations: 6012)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'body' for BlogPost.):
+  
+app/controllers/blog_post_controller.rb:12:in `create'
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 15:22:55 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 7.3ms | Allocations: 2480)
+  Rendered layout layouts/application.html.erb (Duration: 28.6ms | Allocations: 16239)
+Completed 200 OK in 73ms (Views: 30.6ms | ActiveRecord: 31.2ms | Allocations: 18896)
+
+
+Started POST "/blogs" for 127.0.0.1 at 2022-07-20 15:23:00 -0700
+Processing by BlogPostController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "title"=>"new", "content"=>"param", "commit"=>"add post"}
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.0ms | Allocations: 802)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: post):
+  
+app/controllers/blog_post_controller.rb:22:in `blog_params'
+app/controllers/blog_post_controller.rb:12:in `create'
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 15:23:00 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 2430)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 4664)
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 0.0ms | Allocations: 5001)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 15:24:39 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 2449)
+  Rendered layout layouts/application.html.erb (Duration: 21.6ms | Allocations: 16165)
+Completed 200 OK in 43ms (Views: 23.4ms | ActiveRecord: 3.7ms | Allocations: 18817)
+
+
+Started POST "/blogs" for 127.0.0.1 at 2022-07-20 15:24:43 -0700
+Processing by BlogPostController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "title"=>"new", "content"=>"post", "commit"=>"add post"}
+Completed 400 Bad Request in 4ms (ActiveRecord: 0.0ms | Allocations: 810)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: post):
+  
+app/controllers/blog_post_controller.rb:22:in `blog_params'
+app/controllers/blog_post_controller.rb:12:in `create'
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 15:24:43 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 2440)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 4674)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 5007)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 15:29:36 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2446)
+  Rendered layout layouts/application.html.erb (Duration: 29.6ms | Allocations: 16177)
+Completed 200 OK in 46ms (Views: 31.9ms | ActiveRecord: 7.5ms | Allocations: 18827)
+
+
+Started POST "/blogs" for 127.0.0.1 at 2022-07-20 15:29:58 -0700
+Processing by BlogPostController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "title"=>"new", "content"=>"post", "commit"=>"add post"}
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 3787)
+
+
+  
+NameError (undefined local variable or method `new_post_params' for #<BlogPostController:0x00000000021f98>
+Did you mean?  new_post_path):
+  
+app/controllers/blog_post_controller.rb:12:in `create'
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 15:30:13 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2447)
+  Rendered layout layouts/application.html.erb (Duration: 31.6ms | Allocations: 16184)
+Completed 200 OK in 75ms (Views: 33.6ms | ActiveRecord: 34.2ms | Allocations: 18872)
+
+
+Started POST "/blogs" for 127.0.0.1 at 2022-07-20 15:30:18 -0700
+Processing by BlogPostController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "title"=>"new", "content"=>"post", "commit"=>"add post"}
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 2556)
+
+
+  
+NameError (uninitialized constant BlogPostController::BlogPost_params):
+  
+app/controllers/blog_post_controller.rb:12:in `create'
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 15:31:24 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 2454)
+  Rendered layout layouts/application.html.erb (Duration: 16.2ms | Allocations: 16192)
+Completed 200 OK in 27ms (Views: 18.1ms | ActiveRecord: 4.0ms | Allocations: 18837)
+
+
+Started POST "/blogs" for 127.0.0.1 at 2022-07-20 15:31:30 -0700
+Processing by BlogPostController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "title"=>"new", "content"=>"post", "commit"=>"add post"}
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 3308)
+
+
+  
+NameError (undefined local variable or method `post_params' for #<BlogPostController:0x00000000029e50>
+Did you mean?  to_param):
+  
+app/controllers/blog_post_controller.rb:12:in `create'
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 15:31:45 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 4.7ms | Allocations: 2484)
+  Rendered layout layouts/application.html.erb (Duration: 45.0ms | Allocations: 16251)
+Completed 200 OK in 69ms (Views: 47.1ms | ActiveRecord: 5.1ms | Allocations: 18896)
+
+
+Started POST "/blogs" for 127.0.0.1 at 2022-07-20 15:31:51 -0700
+Processing by BlogPostController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "title"=>"new", "content"=>"post", "commit"=>"add post"}
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms | Allocations: 3362)
+
+
+  
+NameError (undefined local variable or method `blogs_params' for #<BlogPostController:0x0000000002dd70>
+Did you mean?  blog_params):
+  
+app/controllers/blog_post_controller.rb:12:in `create'
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 15:32:02 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 2452)
+  Rendered layout layouts/application.html.erb (Duration: 21.3ms | Allocations: 16207)
+Completed 200 OK in 49ms (Views: 22.7ms | ActiveRecord: 7.0ms | Allocations: 18890)
+
+
+Started POST "/blogs" for 127.0.0.1 at 2022-07-20 15:32:13 -0700
+Processing by BlogPostController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "title"=>"new", "content"=>"post", "commit"=>"add post"}
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.0ms | Allocations: 1261)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: post):
+  
+app/controllers/blog_post_controller.rb:23:in `blog_params'
+app/controllers/blog_post_controller.rb:12:in `create'
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 15:32:14 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 2488)
+  Rendered layout layouts/application.html.erb (Duration: 28.5ms | Allocations: 16218)
+Completed 200 OK in 64ms (Views: 31.1ms | ActiveRecord: 3.9ms | Allocations: 18458)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 15:37:46 -0700
+  
+SyntaxError (/Users/learnacademy/Desktop/full-stack-rails-corey-james-full-stack-challenge/app/controllers/blog_post_controller.rb:24: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/blog_post_controller.rb:24: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/blog_post_controller.rb:24: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/blog_post_controller.rb:24: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 15:38:06 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 2472)
+  Rendered layout layouts/application.html.erb (Duration: 23.4ms | Allocations: 16203)
+Completed 200 OK in 62ms (Views: 25.3ms | ActiveRecord: 30.0ms | Allocations: 18886)
+
+
+Started POST "/blogs" for 127.0.0.1 at 2022-07-20 15:38:11 -0700
+Processing by BlogPostController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "title"=>"new", "content"=>"post", "commit"=>"add post"}
+Completed 400 Bad Request in 3ms (ActiveRecord: 0.0ms | Allocations: 810)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: blog):
+  
+app/controllers/blog_post_controller.rb:21:in `blog_params'
+app/controllers/blog_post_controller.rb:12:in `create'
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 15:38:11 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2440)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 4674)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 5007)
+
+
+Started POST "/blogs" for 127.0.0.1 at 2022-07-20 15:39:54 -0700
+Processing by BlogPostController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "title"=>"new", "content"=>"post", "commit"=>"add post"}
+Completed 400 Bad Request in 4ms (ActiveRecord: 0.0ms | Allocations: 786)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: blog):
+  
+app/controllers/blog_post_controller.rb:21:in `blog_params'
+app/controllers/blog_post_controller.rb:12:in `create'
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 15:39:54 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 12.8ms | Allocations: 3520)
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 3599)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms | Allocations: 4568)
+
+
+  
+ActionView::Template::Error (undefined method `blog_posts_path' for #<ActionView::Base:0x0000000003dc98>
+Did you mean?  blog_path):
+    1: <h1>Create a New Blog Post</h1>
+    2: <%= form_with model: @blog do |form|  %>
+    3:     <%= form.label :title %>
+    4:     <%= form.text_field :title %>
+    5:     <br>
+  
+app/views/blog_post/new.html.erb:2
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 15:42:42 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 15.6ms | Allocations: 3466)
+  Rendered layout layouts/application.html.erb (Duration: 16.0ms | Allocations: 3545)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms | Allocations: 4556)
+
+
+  
+ActionView::Template::Error (undefined method `blog_posts_path' for #<ActionView::Base:0x0000000003e300>
+Did you mean?  blog_path):
+    1: <h1>Create a New Blog Post</h1>
+    2: <%= form_with model: @blog do |form|  %>
+    3:     <%= form.label :title %>
+    4:     <%= form.text_field :title %>
+    5:     <br>
+  
+app/views/blog_post/new.html.erb:2
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 15:43:53 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 3297)
+  Rendered layout layouts/application.html.erb (Duration: 25.1ms | Allocations: 17260)
+Completed 200 OK in 53ms (Views: 27.3ms | ActiveRecord: 3.8ms | Allocations: 20233)
+
+
+Started POST "/blogs/new" for 127.0.0.1 at 2022-07-20 15:44:00 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/blogs/new"):
+  
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 15:44:00 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 4.7ms | Allocations: 2492)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 4712)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 5044)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2022-07-20 15:44:15 -0700
+Processing by BlogPostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (0.7ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_post/index.html.erb:2
+  Rendered blog_post/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1079)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 3543)
+Completed 200 OK in 26ms (Views: 16.0ms | ActiveRecord: 0.7ms | Allocations: 3969)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2022-07-20 15:44:17 -0700
+Processing by BlogPostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_post/index.html.erb:2
+  Rendered blog_post/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 712)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 3182)
+Completed 200 OK in 15ms (Views: 12.6ms | ActiveRecord: 0.3ms | Allocations: 3512)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2022-07-20 15:44:18 -0700
+Processing by BlogPostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_post/index.html.erb:2
+  Rendered blog_post/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 712)
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 3170)
+Completed 200 OK in 15ms (Views: 13.0ms | ActiveRecord: 0.3ms | Allocations: 3500)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 15:44:19 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2503)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 4721)
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.0ms | Allocations: 5056)
+
+
+Started POST "/blogs/new" for 127.0.0.1 at 2022-07-20 15:44:24 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/blogs/new"):
+  
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 15:44:24 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 2499)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 4717)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 5049)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 15:45:51 -0700
+Processing by BlogPostController#show as HTML
+  Parameters: {"id"=>"new"}
+  [1m[36mBlogPost Load (1.0ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/blog_post_controller.rb:6:in `show'
+Completed 404 Not Found in 44ms (ActiveRecord: 30.5ms | Allocations: 3763)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find BlogPost with 'id'=new):
+  
+app/controllers/blog_post_controller.rb:6:in `show'
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 15:46:16 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 16.4ms | Allocations: 3480)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 3559)
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 28.1ms | Allocations: 6456)
+
+
+  
+ActionView::Template::Error (undefined method `blog_posts_path' for #<ActionView::Base:0x0000000004a8f8>
+Did you mean?  blog_path):
+    1: <h1>Create a New Blog Post</h1>
+    2: <%= form_with model: @blog do |form|  %>
+    3:     <%= form.label :title %>
+    4:     <%= form.text_field :title %>
+    5:     <br>
+  
+app/views/blog_post/new.html.erb:2
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 15:48:15 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 16.2ms | Allocations: 3207)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 3287)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 5.9ms | Allocations: 5938)
+
+
+  
+ActionView::Template::Error (undefined method `blog_posts_path' for #<ActionView::Base:0x0000000004e8b8>
+Did you mean?  blog_path):
+    1: <h1>Create a New Blog Post</h1>
+    2: <%= form_with model: @blog do |form|  %>
+    3:     <%= form.label :title %>
+    4:     <%= form.text_field :title %>
+    5:     <br>
+  
+app/views/blog_post/new.html.erb:2
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 15:50:23 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 9.6ms | Allocations: 3270)
+  Rendered layout layouts/application.html.erb (Duration: 35.6ms | Allocations: 17212)
+Completed 200 OK in 45ms (Views: 42.3ms | ActiveRecord: 0.0ms | Allocations: 18257)
+
+
+Started POST "/blogs/new" for 127.0.0.1 at 2022-07-20 15:50:28 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/blogs/new"):
+  
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 15:50:28 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2497)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 4731)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 5065)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 15:51:16 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 16.7ms | Allocations: 3474)
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | Allocations: 3553)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms | Allocations: 4563)
+
+
+  
+ActionView::Template::Error (undefined method `blog_posts_path' for #<ActionView::Base:0x0000000004efc0>
+Did you mean?  blog_path):
+    1: <h1>Create a New Blog Post</h1>
+    2: <%= form_with model: BlogPost do |form|  %>
+    3:     <%= form.label :title %>
+    4:     <%= form.text_field :title %>
+    5:     <br>
+  
+app/views/blog_post/new.html.erb:2
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 15:51:33 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1491)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 1570)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 2583)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"blog_post"}, missing required keys: [:id]):
+    1: <h1>Create a New Blog Post</h1>
+    2: <%= form_with model: blog_path do |form|  %>
+    3:     <%= form.label :title %>
+    4:     <%= form.text_field :title %>
+    5:     <br>
+  
+app/views/blog_post/new.html.erb:2
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 15:51:54 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1226)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 1306)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 2321)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Create a New Blog Post</h1>
+<%= form_with model: blogdo |form|  %>
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+    <br>
+    <%= form.label :content %>
+    <%= form.text_field :content %>
+    <br>
+    <%= form.submit 'add post' %>
+    <% end %>
+
+    
+
+):
+1:    <h1>Create a New Blog Post</h1>
+2:    <%= form_with model: blogdo |form|  %>
+3:        <%= form.label :title %>
+4:        <%= form.text_field :title %>
+5:        <br>
+6:        <%= form.label :content %>
+7:        <%= form.text_field :content %>
+8:        <br>
+9:        <%= form.submit 'add post' %>
+10:        <% end %>
+11:    
+12:        
+  
+app/views/blog_post/new.html.erb:2: syntax error, unexpected ')'
+app/views/blog_post/new.html.erb:10: syntax error, unexpected `end', expecting ')'
+app/views/blog_post/new.html.erb:15: syntax error, unexpected `end', expecting ')'
+app/views/blog_post/new.html.erb:2: syntax error, unexpected ')'
+app/views/blog_post/new.html.erb:10: syntax error, unexpected `end', expecting ')'
+app/views/blog_post/new.html.erb:15: syntax error, unexpected `end', expecting ')'
+app/views/blog_post/new.html.erb:2: syntax error, unexpected ')'
+app/views/blog_post/new.html.erb:10: syntax error, unexpected `end', expecting ')'
+app/views/blog_post/new.html.erb:15: syntax error, unexpected `end', expecting ')'
+app/views/blog_post/new.html.erb:2: syntax error, unexpected ')'
+app/views/blog_post/new.html.erb:10: syntax error, unexpected `end', expecting ')'
+app/views/blog_post/new.html.erb:15: syntax error, unexpected `end', expecting ')'
+app/views/blog_post/new.html.erb:2: syntax error, unexpected ')'
+app/views/blog_post/new.html.erb:10: syntax error, unexpected `end', expecting ')'
+app/views/blog_post/new.html.erb:15: syntax error, unexpected `end', expecting ')'
+app/views/blog_post/new.html.erb:2: syntax error, unexpected ')'
+app/views/blog_post/new.html.erb:10: syntax error, unexpected `end', expecting ')'
+app/views/blog_post/new.html.erb:15: syntax error, unexpected `end', expecting ')'
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 15:52:02 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 9.4ms | Allocations: 4446)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 4525)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms | Allocations: 5536)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `blog' for #<ActionView::Base:0x0000000004f920>
+Did you mean?  @blog):
+    1: <h1>Create a New Blog Post</h1>
+    2: <%= form_with model: blog do |form|  %>
+    3:     <%= form.label :title %>
+    4:     <%= form.text_field :title %>
+    5:     <br>
+  
+app/views/blog_post/new.html.erb:2
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 15:52:50 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 12.7ms | Allocations: 3448)
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 3527)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 3.3ms | Allocations: 6469)
+
+
+  
+ActionView::Template::Error (undefined method `blog_posts_path' for #<ActionView::Base:0x00000000053908>
+Did you mean?  blog_path):
+    1: <h1>Create a New Blog Post</h1>
+    2: <%= form_with model: @blogs do |form|  %>
+    3:     <%= form.label :title %>
+    4:     <%= form.text_field :title %>
+    5:     <br>
+  
+app/views/blog_post/new.html.erb:2
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 15:53:01 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 3280)
+  Rendered layout layouts/application.html.erb (Duration: 33.7ms | Allocations: 17222)
+Completed 200 OK in 40ms (Views: 37.0ms | ActiveRecord: 0.0ms | Allocations: 18267)
+
+
+Started POST "/blogs/new" for 127.0.0.1 at 2022-07-20 15:53:06 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/blogs/new"):
+  
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 15:53:07 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 2499)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 4717)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 5050)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 16:03:01 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 3014)
+  Rendered layout layouts/application.html.erb (Duration: 27.7ms | Allocations: 16775)
+Completed 200 OK in 64ms (Views: 29.1ms | ActiveRecord: 22.1ms | Allocations: 22108)
+
+
+Started POST "/blogs/new" for 127.0.0.1 at 2022-07-20 16:03:06 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/blogs/new"):
+  
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 16:03:06 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 2498)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 4725)
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 5057)
+
+
+Started POST "/blogs/new" for 127.0.0.1 at 2022-07-20 16:10:21 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/blogs/new"):
+  
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 16:10:21 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 7.7ms | Allocations: 3241)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 3320)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 8.1ms | Allocations: 8620)
+
+
+  
+ActionView::Template::Error (undefined method `blog_posts_path' for #<ActionView::Base:0x0000000005bfe0>
+Did you mean?  blog_path):
+    1: <h1>Create a New Blog Post</h1>
+    2: <%= form_with model: @blog do |form|  %>
+    3:     <%= form.label :title %>
+    4:     <%= form.text_field :title %>
+    5:     <br>
+  
+app/views/blog_post/new.html.erb:2
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 16:11:55 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 5.6ms | Allocations: 3294)
+  Rendered layout layouts/application.html.erb (Duration: 29.3ms | Allocations: 17236)
+Completed 200 OK in 34ms (Views: 32.2ms | ActiveRecord: 0.0ms | Allocations: 18282)
+
+
+Started POST "/blogs/new" for 127.0.0.1 at 2022-07-20 16:12:01 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/blogs/new"):
+  
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 16:12:01 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 2493)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 4711)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 5044)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2022-07-20 16:12:07 -0700
+Processing by BlogPostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (1.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_post/index.html.erb:2
+  Rendered blog_post/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1023)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 3481)
+Completed 200 OK in 14ms (Views: 11.6ms | ActiveRecord: 1.2ms | Allocations: 3906)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 16:12:19 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 4.6ms | Allocations: 2797)
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 5297)
+Completed 200 OK in 18ms (Views: 16.2ms | ActiveRecord: 0.0ms | Allocations: 6345)
+
+
+Started POST "/blogs/new" for 127.0.0.1 at 2022-07-20 16:12:23 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/blogs/new"):
+  
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 16:12:23 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 2511)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 4729)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 5062)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 16:13:04 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 3032)
+  Rendered layout layouts/application.html.erb (Duration: 22.2ms | Allocations: 16763)
+Completed 200 OK in 42ms (Views: 23.7ms | ActiveRecord: 7.8ms | Allocations: 19473)
+
+
+Started POST "/blogs/new" for 127.0.0.1 at 2022-07-20 16:13:10 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/blogs/new"):
+  
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 16:13:10 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 2489)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 4707)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.0ms | Allocations: 5039)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2022-07-20 16:13:18 -0700
+Processing by BlogPostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (0.4ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_post/index.html.erb:2
+  Rendered blog_post/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 975)
+  Rendered layout layouts/application.html.erb (Duration: 34.1ms | Allocations: 3443)
+Completed 200 OK in 36ms (Views: 34.5ms | ActiveRecord: 0.4ms | Allocations: 3868)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2022-07-20 16:15:20 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blogs"):
+  
+Started GET "/blogs" for 127.0.0.1 at 2022-07-20 16:16:43 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blogs"):
+  
+Started GET "/blogs" for 127.0.0.1 at 2022-07-20 16:16:44 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blogs"):
+  
+Started GET "/blogs" for 127.0.0.1 at 2022-07-20 16:17:13 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/blogs"):
+  
+Started GET "/blogs" for 127.0.0.1 at 2022-07-20 16:18:06 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blogs"):
+  
+Started GET "/blogs" for 127.0.0.1 at 2022-07-20 16:18:51 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blogs"):
+  
+Started GET "/blogs" for 127.0.0.1 at 2022-07-20 16:18:52 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blogs"):
+  
+Started GET "/blogs" for 127.0.0.1 at 2022-07-20 16:19:38 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blogs"):
+  
+Started GET "/blogs" for 127.0.0.1 at 2022-07-20 16:19:39 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blogs"):
+  
+Started GET "/blogs" for 127.0.0.1 at 2022-07-20 16:19:40 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blogs"):
+  
+Started GET "/blogs" for 127.0.0.1 at 2022-07-20 16:20:42 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blogs"):
+  
+Started GET "/blogs" for 127.0.0.1 at 2022-07-20 16:20:43 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blogs"):
+  
+Started GET "/blogs" for 127.0.0.1 at 2022-07-20 16:20:44 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blogs"):
+  
+Started GET "/blogs" for 127.0.0.1 at 2022-07-20 16:20:56 -0700
+Processing by BlogPostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/index.html.erb within layouts/application
+  Rendered blog_post/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1634)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 1715)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 5865)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <h1> All Blogs </h1>
+    2: <% @blog.each do |blog| %>
+    3:     <li>
+    4:     <%= link_to blog.title, blog_path(blog) %>
+    5:     </li>
+  
+app/views/blog_post/index.html.erb:2
+Started GET "/blogs" for 127.0.0.1 at 2022-07-20 16:24:40 -0700
+Processing by BlogPostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (1.0ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_post/index.html.erb:2
+  Rendered blog_post/index.html.erb within layouts/application (Duration: 33.5ms | Allocations: 9616)
+  Rendered layout layouts/application.html.erb (Duration: 100.2ms | Allocations: 43949)
+Completed 200 OK in 105ms (Views: 94.1ms | ActiveRecord: 8.6ms | Allocations: 45025)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 16:24:42 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 16.2ms | Allocations: 3503)
+  Rendered layout layouts/application.html.erb (Duration: 16.5ms | Allocations: 3581)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms | Allocations: 3969)
+
+
+  
+ActionView::Template::Error (undefined method `blog_posts_path' for #<ActionView::Base:0x000000000179f8>
+Did you mean?  blog_path):
+    1: <h1>Create a New Blog Post</h1>
+    2: <%= form_with model: @blog do |form|  %>
+    3:     <%= form.label :title %>
+    4:     <%= form.text_field :title %>
+    5:     <br>
+  
+app/views/blog_post/new.html.erb:2
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 16:25:15 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 29.6ms | Allocations: 8393)
+  Rendered layout layouts/application.html.erb (Duration: 36.0ms | Allocations: 10909)
+Completed 200 OK in 41ms (Views: 39.6ms | ActiveRecord: 0.0ms | Allocations: 11959)
+
+
+Started POST "/blogs/new" for 127.0.0.1 at 2022-07-20 16:25:20 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/blogs/new"):
+  
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 16:25:20 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 2508)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 4742)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 5075)
+
+
+Started POST "/blogs/new" for 127.0.0.1 at 2022-07-20 16:25:32 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/blogs/new"):
+  
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 16:25:32 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 2795)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 5295)
+Completed 200 OK in 11ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 6294)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 16:25:33 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 2503)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 4721)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 5054)
+
+
+Started POST "/blogs/new" for 127.0.0.1 at 2022-07-20 16:25:41 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/blogs/new"):
+  
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 16:25:41 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 8.8ms | Allocations: 3464)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 3543)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 4507)
+
+
+  
+ActionView::Template::Error (undefined method `blog_posts_path' for #<ActionView::Base:0x000000000186a0>
+Did you mean?  blog_path):
+    1: <h1>Create a New Blog Post</h1>
+    2: <%= form_with model: @blog do |form|  %>
+    3:     <%= form.label :title %>
+    4:     <%= form.text_field :title %>
+    5:     <br>
+  
+app/views/blog_post/new.html.erb:2
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 16:26:50 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2791)
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 5307)
+Completed 200 OK in 21ms (Views: 18.5ms | ActiveRecord: 0.0ms | Allocations: 6353)
+
+
+Started POST "/blogs/new" for 127.0.0.1 at 2022-07-20 16:26:55 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/blogs/new"):
+  
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 16:26:55 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 2504)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 4738)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 5071)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 16:28:03 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 2921)
+  Rendered layout layouts/application.html.erb (Duration: 18.6ms | Allocations: 16635)
+Completed 200 OK in 28ms (Views: 19.8ms | ActiveRecord: 3.5ms | Allocations: 19332)
+
+
+Started POST "/blogs/new" for 127.0.0.1 at 2022-07-20 16:28:09 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/blogs/new"):
+  
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 16:28:09 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 2507)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 4725)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 5057)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2022-07-20 16:28:20 -0700
+Processing by BlogPostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (0.8ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_post/index.html.erb:2
+  Rendered blog_post/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 976)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 3434)
+Completed 200 OK in 16ms (Views: 12.4ms | ActiveRecord: 0.8ms | Allocations: 3859)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2022-07-20 16:29:17 -0700
+Processing by BlogPostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (0.6ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_post/index.html.erb:2
+  Rendered blog_post/index.html.erb within layouts/application (Duration: 11.9ms | Allocations: 2087)
+  Rendered layout layouts/application.html.erb (Duration: 32.2ms | Allocations: 16073)
+Completed 200 OK in 40ms (Views: 30.2ms | ActiveRecord: 5.2ms | Allocations: 17453)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 16:29:19 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 2960)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 5178)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 5523)
+
+
+Started POST "/blogs/new" for 127.0.0.1 at 2022-07-20 16:29:25 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/blogs/new"):
+  
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 16:29:25 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 2502)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 4736)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 5068)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2022-07-20 16:29:29 -0700
+Processing by BlogPostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (0.4ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_post/index.html.erb:2
+  Rendered blog_post/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 715)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 3179)
+Completed 200 OK in 14ms (Views: 12.7ms | ActiveRecord: 0.4ms | Allocations: 3509)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2022-07-20 16:31:36 -0700
+Processing by BlogPostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_post/index.html.erb:2
+  Rendered blog_post/index.html.erb within layouts/application (Duration: 7.4ms | Allocations: 2073)
+  Rendered layout layouts/application.html.erb (Duration: 20.1ms | Allocations: 16030)
+Completed 200 OK in 23ms (Views: 17.3ms | ActiveRecord: 3.8ms | Allocations: 17409)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 16:31:37 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2951)
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 5169)
+Completed 200 OK in 18ms (Views: 16.2ms | ActiveRecord: 0.0ms | Allocations: 5514)
+
+
+Started POST "/blogs/new" for 127.0.0.1 at 2022-07-20 16:31:43 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/blogs/new"):
+  
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 16:31:43 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 2510)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 4744)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 5077)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 16:31:53 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2791)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 5291)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.0ms | Allocations: 6336)
+
+
+Started POST "/blogs/new" for 127.0.0.1 at 2022-07-20 16:31:58 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/blogs/new"):
+  
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 16:31:58 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 2494)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 4728)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 5061)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2022-07-20 16:32:03 -0700
+Processing by BlogPostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_post/index.html.erb:2
+  Rendered blog_post/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 907)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 3375)
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 0.3ms | Allocations: 3761)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 16:32:04 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 2487)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 4705)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 5040)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 16:34:49 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 3176)
+  Rendered layout layouts/application.html.erb (Duration: 19.2ms | Allocations: 17152)
+Completed 200 OK in 28ms (Views: 20.7ms | ActiveRecord: 2.8ms | Allocations: 20125)
+
+
+Started POST "/blogs/new" for 127.0.0.1 at 2022-07-20 16:34:54 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/blogs/new"):
+  
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 16:34:54 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 2504)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 4738)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 5070)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2022-07-20 16:34:57 -0700
+Processing by BlogPostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (0.4ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_post/index.html.erb:2
+  Rendered blog_post/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 974)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 3442)
+Completed 200 OK in 14ms (Views: 12.0ms | ActiveRecord: 0.4ms | Allocations: 3867)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 16:35:01 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 5.9ms | Allocations: 2495)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 4713)
+Completed 200 OK in 15ms (Views: 13.1ms | ActiveRecord: 0.0ms | Allocations: 5048)
+
+
+Started POST "/blogs/new" for 127.0.0.1 at 2022-07-20 16:37:11 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/blogs/new"):
+  
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 16:37:11 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 2971)
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 16702)
+Completed 200 OK in 29ms (Views: 18.6ms | ActiveRecord: 6.9ms | Allocations: 19384)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2022-07-20 16:37:15 -0700
+Processing by BlogPostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (0.4ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_post/index.html.erb:2
+  Rendered blog_post/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 788)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 3252)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.4ms | Allocations: 3621)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2022-07-20 16:45:10 -0700
+  
+SyntaxError (/Users/learnacademy/Desktop/full-stack-rails-corey-james-full-stack-challenge/app/controllers/blog_post_controller.rb:27: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/blog_post_controller.rb:27: syntax error, unexpected `end', expecting end-of-input
+app/controllers/blog_post_controller.rb:27: syntax error, unexpected `end', expecting end-of-input
+app/controllers/blog_post_controller.rb:27: syntax error, unexpected `end', expecting end-of-input
+Started GET "/blogs" for 127.0.0.1 at 2022-07-20 16:45:19 -0700
+Processing by BlogPostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (0.7ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_post/index.html.erb:2
+  Rendered blog_post/index.html.erb within layouts/application (Duration: 26.8ms | Allocations: 4825)
+  Rendered layout layouts/application.html.erb (Duration: 39.1ms | Allocations: 18808)
+Completed 200 OK in 43ms (Views: 40.7ms | ActiveRecord: 15.4ms | Allocations: 20186)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 16:45:21 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 5.0ms | Allocations: 2967)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 5185)
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 5530)
+
+
+Started POST "/blogs/new" for 127.0.0.1 at 2022-07-20 16:45:25 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/blogs/new"):
+  
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 16:45:25 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 2501)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 4719)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 5051)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2022-07-20 16:45:29 -0700
+Processing by BlogPostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (0.6ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_post/index.html.erb:2
+  Rendered blog_post/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 708)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 3154)
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 0.6ms | Allocations: 3485)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 16:45:41 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 2962)
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | Allocations: 16720)
+Completed 200 OK in 33ms (Views: 18.9ms | ActiveRecord: 7.4ms | Allocations: 19395)
+
+
+Started POST "/blogs/new" for 127.0.0.1 at 2022-07-20 16:45:46 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/blogs/new"):
+  
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 16:45:46 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 2504)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 4722)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 5054)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2022-07-20 16:45:49 -0700
+Processing by BlogPostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (0.4ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_post/index.html.erb:2
+  Rendered blog_post/index.html.erb within layouts/application (Duration: 14.3ms | Allocations: 788)
+  Rendered layout layouts/application.html.erb (Duration: 19.7ms | Allocations: 3240)
+Completed 200 OK in 23ms (Views: 20.9ms | ActiveRecord: 0.4ms | Allocations: 3610)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2022-07-20 16:47:43 -0700
+Started GET "/blogs" for 127.0.0.1 at 2022-07-20 16:48:15 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BlogPostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (18.0ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_post/index.html.erb:2
+  Rendered blog_post/index.html.erb within layouts/application (Duration: 34.6ms | Allocations: 5879)
+  Rendered layout layouts/application.html.erb (Duration: 104.5ms | Allocations: 40828)
+Completed 200 OK in 126ms (Views: 85.7ms | ActiveRecord: 23.6ms | Allocations: 46830)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 16:48:18 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 13.6ms | Allocations: 4951)
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 7170)
+Completed 200 OK in 21ms (Views: 18.6ms | ActiveRecord: 0.0ms | Allocations: 7602)
+
+
+Started POST "/blogs/new" for 127.0.0.1 at 2022-07-20 16:48:24 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/blogs/new"):
+  
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 16:48:24 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 2509)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 4727)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 5064)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 16:51:47 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2508)
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 4726)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.0ms | Allocations: 5058)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 16:52:40 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 2902)
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 16531)
+Completed 200 OK in 28ms (Views: 18.9ms | ActiveRecord: 3.8ms | Allocations: 19172)
+
+
+Started POST "/blogs/new" for 127.0.0.1 at 2022-07-20 16:52:45 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/blogs/new"):
+  
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 16:52:45 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2510)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 4744)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 5082)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 16:53:14 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 11.6ms | Allocations: 3522)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 3601)
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 29.2ms | Allocations: 6560)
+
+
+  
+ActionView::Template::Error (undefined method `blog_posts_path' for #<ActionView::Base:0x00000000012ca0>
+Did you mean?  blog_path):
+    1: <h1>Create a New Blog Post</h1>
+    2: <%= form_with model: @blog , local: true do |form|  %>
+    3:     <%= form.label :title %>
+    4:     <%= form.text_field :title %>
+    5:     <br>
+  
+app/views/blog_post/new.html.erb:2
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 16:54:24 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 7.8ms | Allocations: 3190)
+  Rendered layout layouts/application.html.erb (Duration: 39.9ms | Allocations: 17132)
+Completed 200 OK in 45ms (Views: 43.6ms | ActiveRecord: 0.0ms | Allocations: 18178)
+
+
+Started POST "/blogs/new" for 127.0.0.1 at 2022-07-20 16:54:30 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/blogs/new"):
+  
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 16:54:30 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 2509)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 4727)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 5060)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2022-07-20 16:54:33 -0700
+Processing by BlogPostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (0.4ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_post/index.html.erb:2
+  Rendered blog_post/index.html.erb within layouts/application (Duration: 7.8ms | Allocations: 972)
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 3436)
+Completed 200 OK in 19ms (Views: 15.5ms | ActiveRecord: 0.4ms | Allocations: 3861)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2022-07-20 16:57:15 -0700
+Processing by BlogPostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (0.6ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_post/index.html.erb:2
+  Rendered blog_post/index.html.erb within layouts/application (Duration: 36.9ms | Allocations: 2122)
+  Rendered layout layouts/application.html.erb (Duration: 60.7ms | Allocations: 15997)
+Completed 200 OK in 65ms (Views: 31.5ms | ActiveRecord: 31.0ms | Allocations: 17376)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2022-07-20 16:57:16 -0700
+Processing by BlogPostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (0.5ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_post/index.html.erb:2
+  Rendered blog_post/index.html.erb within layouts/application (Duration: 16.2ms | Allocations: 716)
+  Rendered layout layouts/application.html.erb (Duration: 22.7ms | Allocations: 3192)
+Completed 200 OK in 24ms (Views: 23.0ms | ActiveRecord: 0.5ms | Allocations: 3522)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 16:57:17 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 2926)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 5144)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 5490)
+
+
+Started POST "/blogs/new" for 127.0.0.1 at 2022-07-20 16:57:22 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/blogs/new"):
+  
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 16:57:22 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 2494)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 4727)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 5059)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2022-07-20 16:57:25 -0700
+Processing by BlogPostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (0.7ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_post/index.html.erb:2
+  Rendered blog_post/index.html.erb within layouts/application (Duration: 24.3ms | Allocations: 711)
+  Rendered layout layouts/application.html.erb (Duration: 31.4ms | Allocations: 3179)
+Completed 200 OK in 34ms (Views: 31.6ms | ActiveRecord: 0.7ms | Allocations: 3513)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2022-07-20 16:58:17 -0700
+Processing by BlogPostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (0.4ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_post/index.html.erb:2
+  Rendered blog_post/index.html.erb within layouts/application (Duration: 25.6ms | Allocations: 920)
+  Rendered layout layouts/application.html.erb (Duration: 36.1ms | Allocations: 3697)
+Completed 200 OK in 41ms (Views: 38.8ms | ActiveRecord: 0.4ms | Allocations: 4740)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 16:58:18 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2775)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 5000)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 5392)
+
+
+Started POST "/blogs/new" for 127.0.0.1 at 2022-07-20 16:58:25 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/blogs/new"):
+  
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-20 16:58:25 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2507)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 4731)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 5063)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2022-07-20 16:58:28 -0700
+Processing by BlogPostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_post/index.html.erb:2
+  Rendered blog_post/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 708)
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 3178)
+Completed 200 OK in 18ms (Views: 15.9ms | ActiveRecord: 0.3ms | Allocations: 3508)
+
+
+Started GET "/" for 127.0.0.1 at 2022-07-21 09:54:24 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BlogPostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (30.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_post/index.html.erb:2
+  Rendered blog_post/index.html.erb within layouts/application (Duration: 214.1ms | Allocations: 5877)
+  Rendered layout layouts/application.html.erb (Duration: 563.8ms | Allocations: 40399)
+Completed 200 OK in 634ms (Views: 424.7ms | ActiveRecord: 154.0ms | Allocations: 46397)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-21 09:54:27 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 92.2ms | Allocations: 4286)
+  Rendered layout layouts/application.html.erb (Duration: 104.5ms | Allocations: 4365)
+Completed 500 Internal Server Error in 113ms (ActiveRecord: 0.0ms | Allocations: 4775)
+
+
+  
+ActionView::Template::Error (undefined method `blog_posts_path' for #<ActionView::Base:0x0000000000ade8>
+Did you mean?  blog_path):
+    1: <h1>Create a New Blog Post</h1>
+    2: <%= form_with model: @blog  do |form|  %>
+    3:     <%= form.label :title %>
+    4:     <%= form.text_field :title %>
+    5:     <br>
+  
+app/views/blog_post/new.html.erb:2
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-21 09:55:33 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 15.5ms | Allocations: 3215)
+  Rendered layout layouts/application.html.erb (Duration: 15.9ms | Allocations: 3295)
+Completed 500 Internal Server Error in 63ms (ActiveRecord: 19.2ms | Allocations: 5965)
+
+
+  
+ActionView::Template::Error (undefined method `blog_posts_path' for #<ActionView::Base:0x0000000000eda8>
+Did you mean?  blog_path):
+    1: <h1>Create a New Blog Post</h1>
+    2: <%= form_with model: @blog  do |form|  %>
+    3:     <%= form.label :title %>
+    4:     <%= form.text_field :title %>
+    5:     <br>
+  
+app/views/blog_post/new.html.erb:2
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-21 09:56:10 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 36.1ms | Allocations: 3215)
+  Rendered layout layouts/application.html.erb (Duration: 36.5ms | Allocations: 3295)
+Completed 500 Internal Server Error in 119ms (ActiveRecord: 8.8ms | Allocations: 5954)
+
+
+  
+ActionView::Template::Error (undefined method `blog_posts_path' for #<ActionView::Base:0x00000000012ae8>
+Did you mean?  blog_path):
+    1: <h1>Create a New Blog Post</h1>
+    2: <%= form_with model: @blog  do |form|  %>
+    3:     <%= form.label :title %>
+    4:     <%= form.text_field :title %>
+    5:     <br>
+  
+app/views/blog_post/new.html.erb:2
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-21 09:57:03 -0700
+  
+ActionController::RoutingError (uninitialized constant BlogController
+Did you mean?  BlogPostController):
+  
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-21 09:57:06 -0700
+  
+ActionController::RoutingError (uninitialized constant BlogController
+Did you mean?  BlogPostController):
+  
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-21 09:57:34 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 11.2ms | Allocations: 3215)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 3294)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 4.3ms | Allocations: 5946)
+
+
+  
+ActionView::Template::Error (undefined method `blog_posts_path' for #<ActionView::Base:0x0000000001a860>
+Did you mean?  blog_path):
+    1: <h1>Create a New Blog Post</h1>
+    2: <%= form_with model: @blog  do |form|  %>
+    3:     <%= form.label :title %>
+    4:     <%= form.text_field :title %>
+    5:     <br>
+  
+app/views/blog_post/new.html.erb:2
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-21 10:08:49 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 10.5ms | Allocations: 3449)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 3528)
+Completed 500 Internal Server Error in 69ms (ActiveRecord: 16.5ms | Allocations: 9124)
+
+
+  
+ActionView::Template::Error (undefined method `blog_posts_path' for #<ActionView::Base:0x0000000001e690>
+Did you mean?  blog_path):
+    1: <h1>Create a New Blog Post</h1>
+    2: <%= form_with model: @blog  do |form|  %>
+    3:     <%= form.label :title %>
+    4:     <%= form.text_field :title %>
+    5:     <br>
+  
+app/views/blog_post/new.html.erb:2
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-21 10:09:11 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 52.6ms | Allocations: 4829)
+  Rendered layout layouts/application.html.erb (Duration: 73.4ms | Allocations: 18772)
+Completed 200 OK in 81ms (Views: 79.4ms | ActiveRecord: 0.0ms | Allocations: 19826)
+
+
+Started POST "/blogs/new" for 127.0.0.1 at 2022-07-21 10:09:18 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/blogs/new"):
+  
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-21 10:09:18 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 2511)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 4729)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 5062)
+
+
+Started GET "/" for 127.0.0.1 at 2022-07-21 10:09:27 -0700
+Processing by BlogPostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (24.6ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_post/index.html.erb:2
+  Rendered blog_post/index.html.erb within layouts/application (Duration: 34.9ms | Allocations: 1030)
+  Rendered layout layouts/application.html.erb (Duration: 38.7ms | Allocations: 3484)
+Completed 200 OK in 41ms (Views: 14.8ms | ActiveRecord: 24.6ms | Allocations: 3912)
+
+
+Started GET "/" for 127.0.0.1 at 2022-07-21 10:09:28 -0700
+Processing by BlogPostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (5.8ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_post/index.html.erb:2
+  Rendered blog_post/index.html.erb within layouts/application (Duration: 13.8ms | Allocations: 712)
+  Rendered layout layouts/application.html.erb (Duration: 22.6ms | Allocations: 3170)
+Completed 200 OK in 26ms (Views: 18.3ms | ActiveRecord: 5.8ms | Allocations: 3500)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-21 10:09:30 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 6.2ms | Allocations: 2501)
+  Rendered layout layouts/application.html.erb (Duration: 36.0ms | Allocations: 4719)
+Completed 200 OK in 38ms (Views: 37.1ms | ActiveRecord: 0.0ms | Allocations: 5054)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-21 10:10:09 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 11.9ms | Allocations: 3449)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 3528)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 18.8ms | Allocations: 6498)
+
+
+  
+ActionView::Template::Error (undefined method `blog_posts_path' for #<ActionView::Base:0x00000000022948>
+Did you mean?  blog_path):
+    1: <h1>Create a New Blog Post</h1>
+    2: <%= form_with model: @blog  do |form|  %>
+    3:     <%= form.label :title %>
+    4:     <%= form.text_field :title %>
+    5:     <br>
+  
+app/views/blog_post/new.html.erb:2
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-21 10:11:24 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 8.6ms | Allocations: 3204)
+  Rendered layout layouts/application.html.erb (Duration: 47.0ms | Allocations: 17146)
+Completed 200 OK in 60ms (Views: 54.3ms | ActiveRecord: 0.0ms | Allocations: 18191)
+
+
+Started POST "/blogs/new" for 127.0.0.1 at 2022-07-21 10:11:29 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/blogs/new"):
+  
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-21 10:11:29 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2499)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 4717)
+Completed 200 OK in 22ms (Views: 19.5ms | ActiveRecord: 0.0ms | Allocations: 5050)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-21 10:13:11 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 9.9ms | Allocations: 3449)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 3529)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 5.2ms | Allocations: 6471)
+
+
+  
+ActionView::Template::Error (undefined method `blog_posts_path' for #<ActionView::Base:0x00000000026b10>
+Did you mean?  blog_path):
+    1: <h1>Create a New Blog Post</h1>
+    2: <%= form_with model: @blog  do |form|  %>
+    3:     <%= form.label :title %>
+    4:     <%= form.text_field :title %>
+    5:     <br>
+  
+app/views/blog_post/new.html.erb:2
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-21 10:14:23 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 35.2ms | Allocations: 3205)
+  Rendered layout layouts/application.html.erb (Duration: 36.7ms | Allocations: 3284)
+Completed 500 Internal Server Error in 98ms (ActiveRecord: 44.9ms | Allocations: 5936)
+
+
+  
+ActionView::Template::Error (undefined method `blog_posts_path' for #<ActionView::Base:0x0000000002a990>
+Did you mean?  blog_path):
+    1: <h1>Create a New Blog Post</h1>
+    2: <%= form_with model: @blog  do |form|  %>
+    3:     <%= form.label :title %>
+    4:     <%= form.text_field :title %>
+    5:     <br>
+  
+app/views/blog_post/new.html.erb:2
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-21 10:17:18 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 19.1ms | Allocations: 3208)
+  Rendered layout layouts/application.html.erb (Duration: 19.4ms | Allocations: 3286)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms | Allocations: 3583)
+
+
+  
+ActionView::Template::Error (undefined method `blog_posts_path' for #<ActionView::Base:0x0000000002acd8>
+Did you mean?  blog_path):
+    1: <h1>Create a New Blog Post</h1>
+    2: <%= form_with model: @blog  do |form|  %>
+    3:     <%= form.label :title %>
+    4:     <%= form.text_field :title %>
+    5:     <br>
+  
+app/views/blog_post/new.html.erb:2
+Started GET "/" for 127.0.0.1 at 2022-07-21 10:29:49 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BlogPostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (3.5ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_post/index.html.erb:2
+  Rendered blog_post/index.html.erb within layouts/application (Duration: 56.8ms | Allocations: 5877)
+  Rendered layout layouts/application.html.erb (Duration: 171.2ms | Allocations: 40719)
+Completed 200 OK in 218ms (Views: 152.7ms | ActiveRecord: 36.9ms | Allocations: 46715)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-21 10:29:52 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 21.9ms | Allocations: 4283)
+  Rendered layout layouts/application.html.erb (Duration: 24.2ms | Allocations: 4362)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms | Allocations: 4772)
+
+
+  
+ActionView::Template::Error (undefined method `blog_posts_path' for #<ActionView::Base:0x0000000000adc0>
+Did you mean?  blog_path):
+    1: <h1>Create a New Blog Post</h1>
+    2: <%= form_with model: @blog  do |form|  %>
+    3:     <%= form.label :title %>
+    4:     <%= form.text_field :title %>
+    5:     <br>
+  
+app/views/blog_post/new.html.erb:2
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-21 10:33:40 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 48.4ms | Allocations: 3446)
+  Rendered layout layouts/application.html.erb (Duration: 50.0ms | Allocations: 3526)
+Completed 500 Internal Server Error in 136ms (ActiveRecord: 4.8ms | Allocations: 6487)
+
+
+  
+ActionView::Template::Error (undefined method `blog_posts_path' for #<ActionView::Base:0x0000000000eda8>
+Did you mean?  blog_path):
+    1: <h1>Create a New Blog Post</h1>
+    2: <%= form_with model: @blog  do |form|  %>
+    3:     <%= form.label :title %>
+    4:     <%= form.text_field :title %>
+    5:     <br>
+  
+app/views/blog_post/new.html.erb:2
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-21 10:35:56 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 9.0ms | Allocations: 3205)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 3284)
+Completed 500 Internal Server Error in 63ms (ActiveRecord: 40.7ms | Allocations: 5940)
+
+
+  
+ActionView::Template::Error (undefined method `blog_posts_path' for #<ActionView::Base:0x00000000012b38>
+Did you mean?  blog_path):
+    1: <h1>Create a New Blog Post</h1>
+    2: <%= form_with model: @blog  do |form|  %>
+    3:     <%= form.label :title %>
+    4:     <%= form.text_field :title %>
+    5:     <br>
+  
+app/views/blog_post/new.html.erb:2
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-21 10:36:41 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/blogs/new"):
+  
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-21 10:39:19 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 32.7ms | Allocations: 3209)
+  Rendered layout layouts/application.html.erb (Duration: 53.9ms | Allocations: 3291)
+Completed 500 Internal Server Error in 120ms (ActiveRecord: 9.0ms | Allocations: 5942)
+
+
+  
+ActionView::Template::Error (undefined method `blog_posts_path' for #<ActionView::Base:0x0000000001a5e0>
+Did you mean?  blog_path):
+    1: <h1>Create a New Blog Post</h1>
+    2: <%= form_with model: @blog  do |form|  %>
+    3:     <%= form.label :title %>
+    4:     <%= form.text_field :title %>
+    5:     <br>
+  
+app/views/blog_post/new.html.erb:2
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-21 10:40:48 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 10.7ms | Allocations: 3208)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 3287)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 7.2ms | Allocations: 5943)
+
+
+  
+ActionView::Template::Error (undefined method `blog_posts_path' for #<ActionView::Base:0x0000000001e3e8>
+Did you mean?  blog_path):
+    1: <h1>Create a New Blog Post</h1>
+    2: <%= form_with model: @blog  do |form|  %>
+    3:     <%= form.label :title %>
+    4:     <%= form.text_field :title %>
+    5:     <br>
+  
+app/views/blog_post/new.html.erb:2
+Started GET "/blogs" for 127.0.0.1 at 2022-07-21 10:47:17 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (25.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BlogPostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (39.5ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_post/index.html.erb:2
+  Rendered blog_post/index.html.erb within layouts/application (Duration: 158.2ms | Allocations: 5881)
+  Rendered layout layouts/application.html.erb (Duration: 294.2ms | Allocations: 40614)
+Completed 200 OK in 341ms (Views: 180.3ms | ActiveRecord: 126.3ms | Allocations: 46612)
+
+
+Started GET "/" for 127.0.0.1 at 2022-07-21 10:47:19 -0700
+Processing by BlogPostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (1.4ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_post/index.html.erb:2
+  Rendered blog_post/index.html.erb within layouts/application (Duration: 135.4ms | Allocations: 717)
+  Rendered layout layouts/application.html.erb (Duration: 150.3ms | Allocations: 3182)
+Completed 200 OK in 157ms (Views: 153.6ms | ActiveRecord: 1.4ms | Allocations: 3522)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-21 10:47:21 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 18.0ms | Allocations: 4283)
+  Rendered layout layouts/application.html.erb (Duration: 18.5ms | Allocations: 4362)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms | Allocations: 4770)
+
+
+  
+ActionView::Template::Error (undefined method `blog_posts_path' for #<ActionView::Base:0x0000000000ade8>
+Did you mean?  blog_path):
+    1: <h1>Create a New Blog Post</h1>
+    2: <%= form_with model: @blog  do |form|  %>
+    3:     <%= form.label :title %>
+    4:     <%= form.text_field :title %>
+    5:     <br>
+  
+app/views/blog_post/new.html.erb:2
+Started GET "/blogs" for 127.0.0.1 at 2022-07-21 10:54:14 -0700
+Processing by BlogPostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (1.0ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_post/index.html.erb:2
+  Rendered blog_post/index.html.erb within layouts/application (Duration: 78.9ms | Allocations: 4832)
+  Rendered layout layouts/application.html.erb (Duration: 142.7ms | Allocations: 18811)
+Completed 200 OK in 162ms (Views: 148.4ms | ActiveRecord: 37.6ms | Allocations: 20192)
+
+
+Started GET "/blogs/1" for 127.0.0.1 at 2022-07-21 10:54:16 -0700
+Processing by BlogPostController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBlogPost Load (1.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/blog_post_controller.rb:6:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/show.html.erb within layouts/application
+  Rendered blog_post/show.html.erb within layouts/application (Duration: 8.0ms | Allocations: 215)
+  Rendered layout layouts/application.html.erb (Duration: 19.9ms | Allocations: 2662)
+Completed 200 OK in 146ms (Views: 23.9ms | ActiveRecord: 1.6ms | Allocations: 5436)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2022-07-21 10:54:19 -0700
+Processing by BlogPostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (1.1ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_post/index.html.erb:2
+  Rendered blog_post/index.html.erb within layouts/application (Duration: 14.4ms | Allocations: 709)
+  Rendered layout layouts/application.html.erb (Duration: 19.2ms | Allocations: 3169)
+Completed 200 OK in 22ms (Views: 19.9ms | ActiveRecord: 1.1ms | Allocations: 3502)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-21 10:54:23 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 11.1ms | Allocations: 3241)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 3319)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 3629)
+
+
+  
+ActionView::Template::Error (undefined method `blog_posts_path' for #<ActionView::Base:0x0000000000efd8>
+Did you mean?  blog_path):
+    1: <h1>Create a New Blog Post</h1>
+    2: <%= form_with model: @blog  do |form|  %>
+    3:     <%= form.label :title %>
+    4:     <%= form.text_field :title %>
+    5:     <br>
+  
+app/views/blog_post/new.html.erb:2
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-21 11:11:39 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (24.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 23.0ms | Allocations: 4540)
+  Rendered layout layouts/application.html.erb (Duration: 23.4ms | Allocations: 4628)
+Completed 500 Internal Server Error in 123ms (ActiveRecord: 51.0ms | Allocations: 15039)
+
+
+  
+ActionView::Template::Error (undefined method `blog_posts_path' for #<ActionView::Base:0x0000000000ab18>
+Did you mean?  blog_path):
+    1: <h1>Create a New Blog Post</h1>
+    2: <%= form_with model: @blog  do |form|  %>
+    3:     <%= form.label :title %>
+    4:     <%= form.text_field :title %>
+    5:     <br>
+  
+app/views/blog_post/new.html.erb:2
+Started GET "/blogs/" for 127.0.0.1 at 2022-07-21 11:11:55 -0700
+Processing by BlogPostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (1.1ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_post/index.html.erb:2
+  Rendered blog_post/index.html.erb within layouts/application (Duration: 25.5ms | Allocations: 1133)
+  Rendered layout layouts/application.html.erb (Duration: 149.9ms | Allocations: 35794)
+Completed 200 OK in 154ms (Views: 150.3ms | ActiveRecord: 1.1ms | Allocations: 36260)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-21 11:12:01 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 16.0ms | Allocations: 3217)
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 3296)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms | Allocations: 3601)
+
+
+  
+ActionView::Template::Error (undefined method `blog_posts_path' for #<ActionView::Base:0x0000000000b0b8>
+Did you mean?  blog_path):
+    1: <h1>Create a New Blog Post</h1>
+    2: <%= form_with model: @blog  do |form|  %>
+    3:     <%= form.label :title %>
+    4:     <%= form.text_field :title %>
+    5:     <br>
+  
+app/views/blog_post/new.html.erb:2
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-21 11:14:54 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 47.5ms | Allocations: 8570)
+  Rendered layout layouts/application.html.erb (Duration: 62.6ms | Allocations: 11087)
+Completed 200 OK in 103ms (Views: 99.2ms | ActiveRecord: 0.0ms | Allocations: 12141)
+
+
+Started POST "/blogs/new" for 127.0.0.1 at 2022-07-21 11:15:04 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/blogs/new"):
+  
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-21 11:15:04 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 10.7ms | Allocations: 2497)
+  Rendered layout layouts/application.html.erb (Duration: 43.2ms | Allocations: 4716)
+Completed 200 OK in 50ms (Views: 49.3ms | ActiveRecord: 0.0ms | Allocations: 5049)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2022-07-21 11:15:11 -0700
+Processing by BlogPostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (0.3ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_post/index.html.erb:2
+  Rendered blog_post/index.html.erb within layouts/application (Duration: 16.6ms | Allocations: 907)
+  Rendered layout layouts/application.html.erb (Duration: 21.1ms | Allocations: 3373)
+Completed 200 OK in 23ms (Views: 21.9ms | ActiveRecord: 0.3ms | Allocations: 3759)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-21 11:15:18 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 2509)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 4727)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 5062)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-21 11:17:14 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 9.1ms | Allocations: 2792)
+  Rendered layout layouts/application.html.erb (Duration: 37.1ms | Allocations: 5292)
+Completed 200 OK in 44ms (Views: 41.9ms | ActiveRecord: 0.0ms | Allocations: 6337)
+
+
+Started POST "/blogs/new" for 127.0.0.1 at 2022-07-21 11:17:19 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/blogs/new"):
+  
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-21 11:17:19 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 2493)
+  Rendered layout layouts/application.html.erb (Duration: 39.1ms | Allocations: 4711)
+Completed 200 OK in 54ms (Views: 44.5ms | ActiveRecord: 0.0ms | Allocations: 5044)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-21 11:20:05 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 2905)
+  Rendered layout layouts/application.html.erb (Duration: 45.2ms | Allocations: 16636)
+Completed 200 OK in 96ms (Views: 48.3ms | ActiveRecord: 5.6ms | Allocations: 19334)
+
+
+Started POST "/blogs/new" for 127.0.0.1 at 2022-07-21 11:20:11 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/blogs/new"):
+  
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-21 11:20:12 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 2492)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 4726)
+Completed 200 OK in 10ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 5058)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2022-07-21 11:20:31 -0700
+Processing by BlogPostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (1.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_post/index.html.erb:2
+  Rendered blog_post/index.html.erb within layouts/application (Duration: 40.1ms | Allocations: 975)
+  Rendered layout layouts/application.html.erb (Duration: 43.8ms | Allocations: 3437)
+Completed 200 OK in 46ms (Views: 43.5ms | ActiveRecord: 1.2ms | Allocations: 3862)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-21 11:20:38 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 2497)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 4715)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 5050)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2022-07-21 11:20:53 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (31.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BlogPostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (5.6ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_post/index.html.erb:2
+  Rendered blog_post/index.html.erb within layouts/application (Duration: 84.0ms | Allocations: 5879)
+  Rendered layout layouts/application.html.erb (Duration: 190.8ms | Allocations: 40316)
+Completed 200 OK in 222ms (Views: 139.9ms | ActiveRecord: 59.2ms | Allocations: 46318)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-21 11:20:57 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 16.0ms | Allocations: 4961)
+  Rendered layout layouts/application.html.erb (Duration: 22.9ms | Allocations: 7180)
+Completed 200 OK in 25ms (Views: 23.8ms | ActiveRecord: 0.0ms | Allocations: 7612)
+
+
+Started POST "/blogs/new" for 127.0.0.1 at 2022-07-21 11:21:04 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/blogs/new"):
+  
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-21 11:21:04 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 2497)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 4715)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 5052)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-21 11:25:45 -0700
+  
+ArgumentError (Invalid route name, already in use: 'blog' 
+You may have defined two routes with the same name using the `:as` option, or you may be overriding a route already defined by a resource with the same naming. For the latter, you can restrict the routes created with `resources` as explained here: 
+https://guides.rubyonrails.org/routing.html#restricting-the-routes-created):
+  
+config/routes.rb:6:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/blogs/" for 127.0.0.1 at 2022-07-21 11:28:42 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BlogPostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (22.2ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_post/index.html.erb:2
+  Rendered blog_post/index.html.erb within layouts/application (Duration: 57.5ms | Allocations: 5877)
+  Rendered layout layouts/application.html.erb (Duration: 153.4ms | Allocations: 40715)
+Completed 200 OK in 194ms (Views: 121.0ms | ActiveRecord: 38.9ms | Allocations: 46713)
+
+
+Started GET "/blogs/" for 127.0.0.1 at 2022-07-21 11:28:44 -0700
+Processing by BlogPostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (0.7ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_post/index.html.erb:2
+  Rendered blog_post/index.html.erb within layouts/application (Duration: 38.4ms | Allocations: 717)
+  Rendered layout layouts/application.html.erb (Duration: 50.7ms | Allocations: 3178)
+Completed 200 OK in 57ms (Views: 55.4ms | ActiveRecord: 0.7ms | Allocations: 3518)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-21 11:28:46 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 20.9ms | Allocations: 4973)
+  Rendered layout layouts/application.html.erb (Duration: 24.8ms | Allocations: 7192)
+Completed 200 OK in 27ms (Views: 25.5ms | ActiveRecord: 0.0ms | Allocations: 7622)
+
+
+Started POST "/blogs/new" for 127.0.0.1 at 2022-07-21 11:28:54 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/blogs/new"):
+  
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-21 11:28:54 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 2509)
+  Rendered layout layouts/application.html.erb (Duration: 23.5ms | Allocations: 4727)
+Completed 200 OK in 25ms (Views: 24.1ms | ActiveRecord: 0.0ms | Allocations: 5064)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-21 11:30:42 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 2899)
+  Rendered layout layouts/application.html.erb (Duration: 59.6ms | Allocations: 16534)
+Completed 200 OK in 65ms (Views: 64.0ms | ActiveRecord: 0.0ms | Allocations: 17306)
+
+
+Started POST "/blogs/new" for 127.0.0.1 at 2022-07-21 11:30:48 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/blogs/new"):
+  
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-21 11:30:48 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2508)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 4742)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 5061)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-21 11:32:00 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 2903)
+  Rendered layout layouts/application.html.erb (Duration: 84.6ms | Allocations: 16649)
+Completed 200 OK in 90ms (Views: 89.6ms | ActiveRecord: 0.0ms | Allocations: 17424)
+
+
+Started POST "/blogs/new" for 127.0.0.1 at 2022-07-21 11:32:05 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/blogs/new"):
+  
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-21 11:32:06 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 2494)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 4712)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.0ms | Allocations: 5030)
+
+
+Started GET "/blogs/" for 127.0.0.1 at 2022-07-21 11:32:23 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BlogPostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (21.8ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_post/index.html.erb:2
+  Rendered blog_post/index.html.erb within layouts/application (Duration: 96.2ms | Allocations: 5877)
+  Rendered layout layouts/application.html.erb (Duration: 272.8ms | Allocations: 40668)
+Completed 200 OK in 383ms (Views: 250.0ms | ActiveRecord: 58.0ms | Allocations: 46664)
+
+
+Started GET "/blogs/" for 127.0.0.1 at 2022-07-21 11:32:25 -0700
+Processing by BlogPostController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (0.4ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts"[0m
+  ↳ app/views/blog_post/index.html.erb:2
+  Rendered blog_post/index.html.erb within layouts/application (Duration: 7.8ms | Allocations: 717)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 3172)
+Completed 200 OK in 17ms (Views: 15.2ms | ActiveRecord: 0.4ms | Allocations: 3512)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-21 11:32:27 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 19.9ms | Allocations: 4967)
+  Rendered layout layouts/application.html.erb (Duration: 23.9ms | Allocations: 7186)
+Completed 200 OK in 26ms (Views: 24.7ms | ActiveRecord: 0.0ms | Allocations: 7571)
+
+
+Started POST "/blogs/new" for 127.0.0.1 at 2022-07-21 11:32:32 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/blogs/new"):
+  
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-21 11:32:32 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 2499)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 4717)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 5036)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-21 11:39:10 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 8.8ms | Allocations: 2796)
+  Rendered layout layouts/application.html.erb (Duration: 23.0ms | Allocations: 5296)
+Completed 200 OK in 39ms (Views: 32.0ms | Allocations: 6324)
+
+
+Started POST "/blogs/new" for 127.0.0.1 at 2022-07-21 11:39:19 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/blogs/new"):
+  
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-21 11:39:20 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 2501)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 4719)
+Completed 200 OK in 19ms (Views: 14.9ms | Allocations: 5035)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-21 11:40:14 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 7.6ms | Allocations: 2803)
+  Rendered layout layouts/application.html.erb (Duration: 23.5ms | Allocations: 5315)
+Completed 200 OK in 34ms (Views: 30.3ms | Allocations: 6346)
+
+
+Started POST "/blogs/new" for 127.0.0.1 at 2022-07-21 11:40:20 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/blogs/new"):
+  
+Started GET "/blogs/new" for 127.0.0.1 at 2022-07-21 11:40:20 -0700
+Processing by BlogPostController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_post/new.html.erb within layouts/application
+  Rendered blog_post/new.html.erb within layouts/application (Duration: 5.9ms | Allocations: 2504)
+  Rendered layout layouts/application.html.erb (Duration: 25.8ms | Allocations: 4738)
+Completed 200 OK in 45ms (Views: 27.6ms | Allocations: 5055)
+
+

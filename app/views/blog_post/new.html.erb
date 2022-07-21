@@ -1,5 +1,5 @@
 <h1>Create a New Blog Post</h1>
-<%= form_with url:'/blogs', local:true do |form| %>
+<%= form_with model: @blog_post do |form|  %>
     <%= form.label :title %>
     <%= form.text_field :title %>
     <br>
